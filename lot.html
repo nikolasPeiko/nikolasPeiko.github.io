@@ -27,72 +27,208 @@
           </div>
         </div>
       </div>
-      <div class="content__registr">
-        <div class="log__wrap">
-          <div class="caption-l">Регистрация</div>
-          <div class="log__wrap__tabs">
-            <div class="log__wrap__tabs__row"><a class="button email active" href="#">Email</a>
-              <div class="log__wrap__tabs__row__line__btn"></div><a class="button phone" href="#">Телефон</a>
+      <div class="content__wrap">
+        <div class="container-l">
+          <div class="breadcrumb"><a href="#">Главная</a><a href="#">Аукцион</a><a href="#">Ноутбук</a><a href="#">Dell Mf ...</a></div>
+          <div class="back__page"><a href="#">Назад</a></div>
+        </div>
+        <div class="lot__page">
+          <div class="container-l">
+            <div class="lot__page__row">
+              <div class="lot__page__row__slider">
+                <div class="slider__lot">
+                  <div class="slider__header"><img src="img/auction/1.png"><img src="img/auction/2.png"><img src="img/auction/3.png"><img src="img/auction/4.png"></div>
+                  <div class="slider__nav"><img src="img/auction/1.png"><img src="img/auction/2.png"><img src="img/auction/3.png"><img src="img/auction/4.png"></div>
+                </div>
+              </div>
+              <div class="lot__page__row__content">
+                <div class="lot__page__row__content__head">
+                  <div class="name">
+                    <h1>Acer TMP259-G2-MG Win10Pro 64bit Preloaded/i5-7200U/8GB DDR4/256GB SSD/NVIDIA</h1>
+                  </div>
+                  <div class="view"><span>Следить за лотом</span></div>
+                </div>
+                <div class="lot__page__row__content__id"><span class="id__lot">ID: 12345678</span></div>
+                <div class="lot__page__row__content__completion__wrap">
+                  <div class="lot__page__row__content__completion__wrap__row">
+                    <div class="lot__page__row__content__completion__wrap__row__col"><span>Время до завершения лота:</span>
+                      <div class="col__box"><span class="time">00:00:13</span><span class="date">09.09.2018 / <i>09:15</i> - 12.09.2018 / <i>09:15</i></span></div>
+                    </div>
+                    <div class="lot__page__row__content__completion__wrap__row__col"><span>Продавец:</span><span class="name">Mr Mykchailo_666999</span></div>
+                  </div>
+                  <div class="lot__page__row__content__completion__wrap__row">
+                    <div class="lot__page__row__content__completion__wrap__row__col"><span>Местоположение:</span><span class="city">Черкассы</span></div>
+                    <div class="lot__page__row__content__completion__wrap__row__col"><span>Сайт:</span><span class="lik__web">www.website.com</span></div>
+                  </div>
+                  <div class="lot__page__row__content__completion__wrap__row">
+                    <div class="lot__page__row__content__completion__wrap__row__col"><span>Текущая ставка:</span>
+                      <div class="col__box"><span class="price"><b>550</b> evo</span><span class="all__bet">(2 ставки)</span></div>
+                    </div>
+                    <div class="lot__page__row__content__completion__wrap__row__col"><span>Телефон:</span><span class="tel">+380731531515</span></div>
+                  </div>
+                  <div class="lot__page__row__content__completion__wrap__row">
+                    <div class="lot__page__row__content__completion__wrap__row__col"><span>Начальная цена:</span><span class="first-price"><b>550</b> evo</span></div>
+                    <div class="lot__page__row__content__completion__wrap__row__col"><a class="button button__blue button__messege" href="">Написать продавцу<img src="img/icon/messege.svg"></a></div>
+                  </div>
+                  <div class="lot__page__row__content__completion__wrap__row">
+                    <div class="wrap__rate">
+                      <input placeholder="Ваша ставка"><a class="button button__yellow" href="">Сделать ставку</a>
+                    </div>
+                  </div>
+                  <div class="lot__page__row__content__completion__wrap__row">
+                    <div class="info__wrap"><i class="fas fa-info-circle"></i><span>Поставьте ставку 560 или выше кратную 10</span>
+                      <div class="info__desc">
+                        <p>В случае когда Вы поставите ставку на сумму с разницей больше, чем минимальный шаг, система запоминает ваше предложение, но выставляет ставку больше предыдущей в один шаг. Если Ваше предложение будет перебито, то от Вас автоматически будет выставляться, до той суммы, которую вы указали как максимальный.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <form class="form email open">
-              <div class="form__row errors">
-                <label>Email</label>
-                <input placeholder="Введите почту">
-                <div class="error">Данный email уже используется</div>
+            <div class="lot__page__desc">
+              <div class="lot__page__desc__wrap">
+                <div class="lot__page__desc__wrap__row">
+                  <div class="caption">Описание лота:</div>
+                  <p class="desc__lot">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae hendrerit justo, id elementum velit. Phasellus sed bibendum nisi, sed sagittis augue. Nulla risus risus, aliquam scelerisque aliquet in, vehicula at enim. Etiam sagittis ante a turpis hendrerit imperdiet. Nunc pellentesque convallis dolor vel finibus. Fusce congue odio mi, congue fringilla erat varius in. Duis ultricies fermentum leo quis lobortis. Nam et leo id augue ornare lobortis quis eu neque.</p>
+                </div>
+                <div class="lot__page__desc__wrap__row">
+                  <div class="caption">История ставок:</div>
+                  <div class="history__rate">
+                    <div class="history__rate__head">
+                      <div class="item">Пользователь:</div>
+                      <div class="item">Время:</div>
+                      <div class="item">Ставка:</div>
+                    </div>
+                    <div class="history__rate__table" id="simple-bar__table">
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                      <div class="history__rate__table__row">
+                        <div class="item name">Mr Mykchailo_666999</div>
+                        <div class="item time">09.09.2018 / 24:56</div>
+                        <div class="item price">567 Грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
+            </div>
+            <div class="recommend__wrap">
+              <div class="recommended recommended__slider">
+                <div class="recommended__item">
+                  <div class="img__box"><img src="./img/auction/2.png"></div>
+                  <div class="desc">
+                    <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                    <div class="price__auction">
+                      <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                      <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommended__item">
+                  <div class="img__box"><img src="./img/auction/3.png"></div>
+                  <div class="desc">
+                    <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                    <div class="price__auction">
+                      <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                      <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommended__item">
+                  <div class="img__box"><img src="./img/auction/4.png"></div>
+                  <div class="desc">
+                    <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                    <div class="price__auction">
+                      <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                      <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommended__item">
+                  <div class="img__box"><img src="./img/auction/1.png"></div>
+                  <div class="desc">
+                    <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                    <div class="price__auction">
+                      <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                      <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommended__item">
+                  <div class="img__box"><img src="./img/auction/3.png"></div>
+                  <div class="desc">
+                    <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                    <div class="price__auction">
+                      <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                      <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommended__item">
+                  <div class="img__box"><img src="./img/auction/4.png"></div>
+                  <div class="desc">
+                    <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                    <div class="price__auction">
+                      <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                      <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommended__item">
+                  <div class="img__box"><img src="./img/auction/1.png"></div>
+                  <div class="desc">
+                    <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                    <div class="price__auction">
+                      <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                      <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
-              </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
-              </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal__success">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
-            <form class="form phone">
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите номер телефона">
-                <div class="error">Данный номер уже используется</div>
-              </div>
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите код из смс">
-                <div class="error">Неверный код из смс</div>
-              </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
-              </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
-              </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
-              </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

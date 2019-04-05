@@ -29,71 +29,21 @@
       </div>
       <div class="content__registr">
         <div class="log__wrap">
-          <div class="caption-l">Регистрация</div>
-          <div class="log__wrap__tabs">
-            <div class="log__wrap__tabs__row"><a class="button email active" href="#">Email</a>
-              <div class="log__wrap__tabs__row__line__btn"></div><a class="button phone" href="#">Телефон</a>
+          <div class="caption-l">Авторизация</div>
+          <form class="form autorization">
+            <div class="form__row errors">
+              <label>Email или Логин</label>
+              <input placeholder="Email или Логин">
+              <div class="error">Неверный Email или Логин</div>
             </div>
-            <form class="form email open">
-              <div class="form__row errors">
-                <label>Email</label>
-                <input placeholder="Введите почту">
-                <div class="error">Данный email уже используется</div>
-              </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
-              </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
-              </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
-              </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal__success">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
-            <form class="form phone">
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите номер телефона">
-                <div class="error">Данный номер уже используется</div>
-              </div>
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите код из смс">
-                <div class="error">Неверный код из смс</div>
-              </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
-              </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
-              </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
-              </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
-          </div>
+            <div class="form__row">
+              <label>Пароль</label>
+              <input placeholder="Придумайте пароль" type="password">
+              <div class="error">Неверный формат пароля</div>
+            </div><a class="button button__yellow">Войти</a>
+            <div class="link__registration">Нет аккаунта ?<a href="#"> Создайте его здесь</a></div>
+            <div class="link__recovery__pass"><a class="btn__modal" href="#"> Забыли пароль ?</a></div>
+          </form>
         </div>
       </div>
       <footer>
@@ -113,9 +63,17 @@
       <div class="modal__wrap">
         <div class="modal__content">
           <div class="close"><i></i><i></i></div>
-          <div class="modal__success">
-            <div class="desc">На указанный Вами email отправлено письмо-подтверждение регистрации</div><a class="button button__yellow" href="#">Понятно</a><a>Отправить повторно</a>
-          </div>
+          <form class="modal__recovery">
+            <div class="caption-l">Восстановление пароля</div>
+            <div class="desc">Введите адрес почты, на который мы вышлем ссылку для восстановления пароля</div>
+            <div class="email">
+              <input type="email" placeholder="E-mail">
+            </div><a class="button button__yellow recovery__success" href="#">Отправить</a>
+          </form>
+          <form class="modal__recovery modal__recovery__success">
+            <div class="caption-l">Восстановление пароля</div>
+            <div class="desc">На указанную вами почту придёт сообщение с ссылкой для восстановления пароля</div><a class="button button__yellow" href="#">Понятно</a><a class="resend" href="">Отправить повторно</a>
+          </form>
         </div>
       </div>
     </div>

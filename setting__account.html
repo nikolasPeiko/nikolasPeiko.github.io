@@ -27,72 +27,134 @@
           </div>
         </div>
       </div>
-      <div class="content__registr">
-        <div class="log__wrap">
-          <div class="caption-l">Регистрация</div>
-          <div class="log__wrap__tabs">
-            <div class="log__wrap__tabs__row"><a class="button email active" href="#">Email</a>
-              <div class="log__wrap__tabs__row__line__btn"></div><a class="button phone" href="#">Телефон</a>
+      <div class="nav__account">
+        <div class="container-l">
+          <div class="nav__account__wrap"><a class="nav__account__wrap__tab" href="#">Настройки аккаунта</a><a class="nav__account__wrap__tab messege__nav" href="#">Сообщения<i class="fas fa-circle notification"></i></a><a class="nav__account__wrap__tab" href="#">Лоты</a><a class="nav__account__wrap__tab" href="#">Балансы</a></div>
+        </div>
+      </div>
+      <div class="account__content">
+        <div class="container-l">
+          <div class="caption-l">Настройки аккаунта</div>
+          <div class="setting__account">
+            <div class="setting__account__status"><span class="desc">Статус пользователя:</span><span class="status active">Активный</span></div>
+            <div class="account__box setting__account__avatar">
+              <div class="setting__account__avatar__box"><img class="defaut" src="./img/icon/photo__icon.png"><img class="avatar__profile" src="data:image/jpeg;base64,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"></div>
+              <div class="setting__account__avatar__desc">
+                <div class="box__desc">
+                  <div class="caption">Изображение профиля</div>
+                  <div class="desc">Файл не может превышать размер 200 Mb и разрешение 200х200 px</div>
+                </div><a class="button button__border-blue" href="">Загрузить файл</a>
+              </div>
             </div>
-            <form class="form email open">
-              <div class="form__row errors">
-                <label>Email</label>
-                <input placeholder="Введите почту">
-                <div class="error">Данный email уже используется</div>
+            <div class="account__box basic__data">
+              <div class="box__desc">
+                <div class="caption">Основные данные</div>
+                <div class="desc">Указывайте настоящие имя и фамилию</div>
               </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
+              <div class="account__box__row">
+                <div class="account__box__row__col">
+                  <label>Имя</label>
+                  <input placeholder="Введите имя">
+                </div>
+                <div class="account__box__row__col">
+                  <label>Фамилия</label>
+                  <input value="Пупков" type="text">
+                </div>
+                <div class="account__box__row__col">
+                  <label>Логин</label>
+                  <input value="tanK1st" type="text">
+                </div>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
+              <div class="account__box__row">
+                <div class="account__box__row__col">
+                  <label>Укажите пол</label>
+                  <select class="custom__select">
+                    <option>Не выбрано</option>
+                    <option>Мужчина</option>
+                    <option>Женжина</option>
+                  </select>
+                </div>
+                <div class="account__box__row__col">
+                  <label>Город</label>
+                  <input value="Город">
+                </div>
+                <div class="account__box__row__col">
+                  <label>Адрес</label>
+                  <input value="ул. Эвокоинская, 15б">
+                </div>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
+            </div>
+            <div class="account__box">
+              <div class="box__desc">
+                <div class="caption">Контактные данные</div>
               </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal__success">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
-            <form class="form phone">
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите номер телефона">
-                <div class="error">Данный номер уже используется</div>
+              <div class="account__box__row">
+                <div class="account__box__row__col">
+                  <label>Email</label>
+                  <input placeholder="Введите имя" value="pupkov@mail.com">
+                </div>
+                <div class="account__box__row__col">
+                  <label>Номер телефона</label>
+                  <input value="+380123456789" type="tel">
+                </div>
+                <div class="account__box__row__col">
+                  <label>Сайт</label>
+                  <input value="http://mywebsite/" type="tel">
+                </div>
               </div>
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите код из смс">
-                <div class="error">Неверный код из смс</div>
+              <div class="account__box__row">
+                <div class="account__box__row__col">
+                  <label>Страна</label>
+                  <select class="custom__select">
+                    <option>Украина</option>
+                    <option>Канада</option>
+                    <option>Германия</option>
+                  </select>
+                </div>
+                <div class="account__box__row__col">
+                  <label>Город</label>
+                  <select class="custom__select">
+                    <option>Киев</option>
+                    <option>Роттердам</option>
+                    <option>Лондон</option>
+                  </select>
+                </div>
+                <div class="account__box__row__col">
+                  <label>Адрес</label>
+                  <input value="ул. Эвокоинская, 15б">
+                </div>
               </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
+            </div>
+            <div class="account__box">
+              <div class="box__desc">
+                <div class="caption">Настройка двухфакторной авторизации</div>
+                <div class="desc">Вы можете выбрать только один способ авторизации</div>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
+              <div class="account__box__row">
+                <label class="check">Номер телефона
+                  <input class="custom__checkbox" name="autorization__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
+              <div class="account__box__row">
+                <label class="check">Email
+                  <input class="custom__checkbox" name="autorization__radio" type="radio">
+                </label>
               </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
+              <div class="account__box__row"><a class="disabled__autorization" href="#">Отключить двухфакторную авторизацию</a></div>
+            </div>
+            <div class="setting__account__save">
+              <label class="check">Согласие на обработку персональных данных
+                <input class="custom__checkbox" name="autorization__radio" type="checkbox">
+              </label>
+              <div class="lang__wrap">
+                <label>Язык:</label>
+                <select class="custom__select">
+                  <option>Ру</option>
+                  <option>Анг</option>
+                  <option>Ук</option>
+                </select>
+              </div><a class="button button__gray" href="#">сохранить</a>
+            </div>
           </div>
         </div>
       </div>

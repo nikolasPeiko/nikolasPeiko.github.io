@@ -27,72 +27,199 @@
           </div>
         </div>
       </div>
-      <div class="content__registr">
-        <div class="log__wrap">
-          <div class="caption-l">Регистрация</div>
-          <div class="log__wrap__tabs">
-            <div class="log__wrap__tabs__row"><a class="button email active" href="#">Email</a>
-              <div class="log__wrap__tabs__row__line__btn"></div><a class="button phone" href="#">Телефон</a>
+      <div class="container-l">
+        <div class="auction__wrap">
+          <form class="auction__wrap__filter">
+            <div class="auction__wrap__filter__row">
+              <label>Регион:</label>
+              <select class="custom__select">
+                <option>Киев</option>
+                <option>Нью-Касл</option>
+                <option>Ротердам</option>
+                <option>Барселона</option>
+              </select>
             </div>
-            <form class="form email open">
-              <div class="form__row errors">
-                <label>Email</label>
-                <input placeholder="Введите почту">
-                <div class="error">Данный email уже используется</div>
+            <div class="auction__wrap__filter__row">
+              <label>Категории:</label>
+              <select class="custom__select">
+                <option>Техника и аксессуары</option>
+                <option>Техника и аксессуары</option>
+                <option>Техника и аксессуары</option>
+                <option>Техника и аксессуары</option>
+              </select>
+            </div>
+            <div class="auction__wrap__filter__row">
+              <label>Цена:</label>
+              <div class="row">
+                <label class="check">До 1000 грн
+                  <input class="custom__checkbox" name="filter__price__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
+              <div class="row">
+                <label class="check">От 1000 до 5000 грн
+                  <input class="custom__checkbox" name="filter__price__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
+              <div class="row">
+                <label class="check">Выше 10000 грн
+                  <input class="custom__checkbox" name="filter__price__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
+              <div class="row price">
+                <input type="number" placeholder="от">
+                <input type="number" placeholder="до">
               </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal__success">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
-            <form class="form phone">
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите номер телефона">
-                <div class="error">Данный номер уже используется</div>
+            </div>
+            <div class="auction__wrap__filter__row">
+              <label>Дата:</label>
+              <div class="row">
+                <label class="check">За сегодня
+                  <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row errors">
-                <label>Телефон</label>
-                <input placeholder="Введите код из смс">
-                <div class="error">Неверный код из смс</div>
+              <div class="row">
+                <label class="check">Вчера
+                  <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row">
-                <label>Логин</label>
-                <input placeholder="Придумайте логин">
-                <div class="error">Уже есть пользователь с таким именем</div>
+              <div class="row">
+                <label class="check">За 7 дней
+                  <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Придумайте пароль" type="password">
-                <div class="error">Неверный формат пароля</div>
+              <div class="row">
+                <label class="check">Завершающиеся
+                  <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                </label>
               </div>
-              <div class="form__row">
-                <label>Пароль</label>
-                <input placeholder="Введите пароль повторно" type="password">
-                <div class="error"><span>Надёжность пароля:</span> Слабый</div>
+            </div>
+          </form>
+          <div class="auction__wrap__content">
+            <div class="search__wrap">
+              <input class="search">
+              <div class="line__search"></div><a class="button button__yellow">Поиск</a>
+            </div>
+            <div class="auction__wrap__content__page">
+              <div class="row__head">
+                <div class="pagination"><span>Cтраница</span>
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>...</li>
+                    <li>56</li>
+                  </ul>
+                </div>
+                <div class="filter"><span>Сортировка:</span>
+                  <select class="custom__select">
+                    <option>Название</option>
+                    <option>Название</option>
+                    <option>Дорогие</option>
+                    <option>Дата</option>
+                  </select>
+                </div>
               </div>
-              <div class="form__check form__row">
-                <input type="checkbox">
-                <label>Я соглашаюсь с условиями пользования сервисом и политикой конфиденциальности</label>
-              </div><a class="button button__yellow btn__modal">Подтвердить</a>
-              <div class="link__authorization">Уже есть страница ?<a href="#"> Войдите здесь</a></div>
-            </form>
+            </div>
+            <div class="auction__wrap__content__page__box">
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/1.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/2.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/3.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/4.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/1.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/1.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/1.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/1.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="auction__wrap__content__page__box__item">
+                <div class="img__box"><img src="./img/auction/1.png"></div>
+                <div class="desc">
+                  <div class="id"><span>ID :</span><span class="id__number">12345678</span></div><a class="name" href="#">Acer Liquid Jade Z Single Sim Black</a>
+                  <div class="price__auction">
+                    <div class="price__box"><span class="price"><b>345</b> UAH</span><span class="bets">0 ставок</span></div>
+                    <div class="completion__box"><span>До завершения:</span><span class="time">12:34:07</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination__page"><a class="btn__pref" href="#"></a>
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+              </ul><a class="btn__next" href="#"></a>
+            </div>
           </div>
         </div>
       </div>
