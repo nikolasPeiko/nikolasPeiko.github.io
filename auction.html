@@ -21,13 +21,19 @@
     <div class="l-wrap">
       <div class="header__wrapper">
         <div class="container-l">
-          <div class="header"><a class="header__logo" href="#"><img src="./img/logo/evocoin__logo.svg"></a>
+          <div class="header">
+            <div class="header__naw__mobile">
+              <div class="header__naw__mobile__btn"><i></i><i></i><i></i></div>
+              <div class="header__naw__mobile__bar">
+                <div class="close__btn"><i></i><i></i></div><a class="header__naw__item" href="#">Главная</a><a class="header__naw__item" href="#">О нас</a><a class="header__naw__item" href="#">Партнёры</a><a class="header__naw__item" href="#">Аукцион</a><a class="header__naw__item" href="#">FAQ</a><a class="header__naw__item" href="#">Контакты</a><a class="button button__yellow">Личный кабинет<img src="img/icon/profile-icon.svg"></a>
+              </div>
+            </div><a class="header__logo" href="#"><img src="./img/logo/evocoin__logo.svg"></a><a class="header__logo__mobile" href="#"><img src="./img/logo/evocoin__logo__mobile.svg"></a>
             <div class="header__naw"><a class="header__naw__item" href="#">Главная</a><a class="header__naw__item" href="#">О нас</a><a class="header__naw__item" href="#">Партнёры</a><a class="header__naw__item" href="#">Аукцион</a><a class="header__naw__item" href="#">FAQ</a><a class="header__naw__item" href="#">Контакты</a></div>
             <div class="header__naw__right"><a class="button registration__btn" href="#">Регистрация</a><a class="profile" href="#"></a></div>
           </div>
         </div>
       </div>
-      <div class="container-l">
+      <div class="container-l container-bg">
         <div class="auction__wrap">
           <form class="auction__wrap__filter">
             <div class="auction__wrap__filter__row">
@@ -100,6 +106,81 @@
               <div class="line__search"></div><a class="button button__yellow">Поиск</a>
             </div>
             <div class="auction__wrap__content__page">
+              <div class="filter__mobile">
+                <div class="btn__mobile__filter">Фильтры</div>
+                <div class="filter__mobile__wrap">
+                  <form class="auction__wrap__filter">
+                    <div class="filter__mobile__wrap__row">
+                      <div class="close__btn"><i></i><i></i></div>
+                      <div class="auction__wrap__filter__row">
+                        <label>Регион:</label>
+                        <select class="custom__select">
+                          <option>Киев</option>
+                          <option>Нью-Касл</option>
+                          <option>Ротердам</option>
+                          <option>Барселона</option>
+                        </select>
+                      </div>
+                      <div class="auction__wrap__filter__row">
+                        <label>Цена:</label>
+                        <div class="row">
+                          <label class="check">До 1000 грн
+                            <input class="custom__checkbox" name="filter__price__radio" type="radio">
+                          </label>
+                        </div>
+                        <div class="row">
+                          <label class="check">От 1000 до 5000 грн
+                            <input class="custom__checkbox" name="filter__price__radio" type="radio">
+                          </label>
+                        </div>
+                        <div class="row">
+                          <label class="check">Выше 10000 грн
+                            <input class="custom__checkbox" name="filter__price__radio" type="radio">
+                          </label>
+                        </div>
+                        <div class="row price">
+                          <input type="number" placeholder="от">
+                          <input type="number" placeholder="до">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__mobile__wrap__row">
+                      <div class="auction__wrap__filter__row">
+                        <label>Категории:</label>
+                        <select class="custom__select">
+                          <option>Техника и аксессуары</option>
+                          <option>Техника и аксессуары</option>
+                          <option>Техника и аксессуары</option>
+                          <option>Техника и аксессуары</option>
+                        </select>
+                      </div>
+                      <div class="auction__wrap__filter__row">
+                        <label>Дата:</label>
+                        <div class="row">
+                          <label class="check">За сегодня
+                            <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                          </label>
+                        </div>
+                        <div class="row">
+                          <label class="check">Вчера
+                            <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                          </label>
+                        </div>
+                        <div class="row">
+                          <label class="check">За 7 дней
+                            <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                          </label>
+                        </div>
+                        <div class="row">
+                          <label class="check">Завершающиеся
+                            <input class="custom__checkbox" name="filter__day__radio" type="radio">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
               <div class="row__head">
                 <div class="pagination"><span>Cтраница</span>
                   <ul>
