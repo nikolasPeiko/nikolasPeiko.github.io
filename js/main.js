@@ -391,6 +391,38 @@ function messege__mobile() {
 }
 messege__mobile();
 
+function respons_myLot() {
+    var widthBody = $(window).width();
+    var box = $('.purchases__wrap__row');
+    var img = box.find('.purchases__wrap__row__img');
+    var btn = $('.purchases__wrap__act');
+    $(document).ready(resize__box());
+    $(window).resize(function () {
+        widthBody = $(window).width();
+        resize__box();
+    });
+    function resize__box() {
+        if (widthBody < 743) {
+            img.each(function () {
+                $(this).prependTo($(this).parent().find('.purchases__wrap__row__desc'));
+            });
+            btn.each(function () {
+                console.log(btn);
+                $(this).appendTo($(this).parents('.purchases__wrap__row'));
+            });
+        } else {
+            img.each(function () {
+                $(this).prependTo($(this).parents('.purchases__wrap__row'));
+            });
+            btn.each(function () {
+                console.log($(this));
+                $(this).appendTo($(this).parents('.purchases__wrap__row').find('.purchases__wrap__row__desc'));
+            });
+        }
+    }
+}
+respons_myLot();
+
 /***/ })
 /******/ ]);
 //# sourceMappingURL=main.js.map
