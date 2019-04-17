@@ -379,6 +379,18 @@ function mobile__filter() {
 
 mobile__filter();
 
+function messege__mobile() {
+    $('.messege__wrap__dialog-bar__wrap__item').on('click', function () {
+        $('.messege__wrap__dialog-bar__wrap__item').removeClass('active');
+        $(this).addClass('active');
+        $('.messege__wrap__dialog').addClass('active');
+        $('.back__dialog').on('click', function () {
+            $('.messege__wrap__dialog').removeClass('active');
+        });
+    });
+}
+messege__mobile();
+
 /***/ })
 /******/ ]);
 //# sourceMappingURL=main.js.map
