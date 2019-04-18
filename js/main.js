@@ -146,6 +146,11 @@ tabsRegistration();
 function customSelect() {
     $('.custom__select').styler();
 }
+function customSelect() {
+    $('.my__lot').styler({
+        selectPlaceholder: 'Другие действия'
+    });
+}
 
 customSelect();
 
