@@ -454,6 +454,29 @@ $(document).mouseup(function (e) {
     }
 });
 
+$('.profile').on('click', function () {
+    $('.header__profile').addClass('open');
+    $('body').addClass('no__scroll');
+    $('.header__profile').find('.close__btn').on('click', function () {
+        $(this).parent().removeClass('open');
+        $('body').removeClass('no__scroll');
+    });
+});
+
+$(document).mouseup(function (e) {
+    // событие клика по веб-документу
+    var div = $(".header__profile"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+    && div.has(e.target).length === 0) {
+        // и не по его дочерним элементам
+
+        if ($('.header__profile').hasClass('open')) {
+            $('body').removeClass('no__scroll');
+            $('.header__profile').removeClass('open'); // скрываем его
+        }
+    }
+});
+
 /***/ })
 /******/ ]);
 //# sourceMappingURL=main.js.map
