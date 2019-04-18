@@ -146,11 +146,10 @@ tabsRegistration();
 function customSelect() {
     $('.custom__select').styler();
 }
-function customSelect() {
-    $('.my__lot').styler({
-        selectPlaceholder: 'Другие действия'
-    });
-}
+
+$('.my__lot').styler({
+    selectPlaceholder: 'Другие действия'
+});
 
 customSelect();
 
@@ -427,6 +426,23 @@ function respons_myLot() {
     }
 }
 respons_myLot();
+
+function notification__bell() {
+
+    $('body').on('click', '.btn__notification', function () {
+        $(this).parent().find('.notification__wrap').toggleClass('open');
+    });
+
+    $('body').on('click', '.notification__wrap__item__head', function () {
+        $('.notification__wrap__item__body').removeClass('open');
+        $(this).parent().find('.notification__wrap__item__body').addClass('open');
+    });
+
+    $('body').on('click', '.header__wrapper .header__naw__right .notification__wrap__item__body__row', function () {
+        $(this).find('.status__check i').css('color', '#1FE433');
+    });
+}
+notification__bell();
 
 /***/ })
 /******/ ]);
