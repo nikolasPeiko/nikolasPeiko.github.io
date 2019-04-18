@@ -407,7 +407,7 @@ function respons_myLot() {
                 $(this).prependTo($(this).parent().find('.purchases__wrap__row__desc'));
             });
             btn.each(function () {
-                console.log(btn);
+                // console.log(btn)
                 $(this).appendTo($(this).parents('.purchases__wrap__row'));
             });
         } else {
@@ -415,7 +415,7 @@ function respons_myLot() {
                 $(this).prependTo($(this).parents('.purchases__wrap__row'));
             });
             btn.each(function () {
-                console.log($(this));
+                // console.log($(this))
                 $(this).appendTo($(this).parents('.purchases__wrap__row').find('.purchases__wrap__row__desc'));
             });
         }
