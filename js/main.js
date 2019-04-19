@@ -198,43 +198,6 @@ function slider__lot__page() {
 }
 
 slider__lot__page();
-$('.recommended__slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.slider__header',
-    dots: false,
-    arrows: true,
-    centerMode: false,
-    focusOnSelect: false,
-    responsive: [{
-        breakpoint: 1160,
-        settings: {
-            dots: false,
-            arrows: false
-        }
-    }, {
-        breakpoint: 960,
-        settings: {
-            slidesToShow: 3,
-            dots: false,
-            arrows: false
-        }
-    }, {
-        breakpoint: 760,
-        settings: {
-            slidesToShow: 2,
-            dots: false,
-            arrows: false
-        }
-    }, {
-        breakpoint: 600,
-        settings: {
-            slidesToShow: 1,
-            dots: false,
-            arrows: true
-        }
-    }]
-});
 
 $('.slider__phone__box').slick({
     slidesToShow: 1,
@@ -476,6 +439,53 @@ $(document).mouseup(function (e) {
         }
     }
 });
+
+function count__recomendet() {
+    var count = $('.recommended__item').length;
+    $(console.log(count));
+    if (count >= 4) {
+        $('.recommended__slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider__header',
+            dots: false,
+            arrows: true,
+            centerMode: false,
+            focusOnSelect: false,
+            responsive: [{
+                breakpoint: 1160,
+                settings: {
+                    dots: false,
+                    arrows: false
+                }
+            }, {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 3,
+                    dots: false,
+                    arrows: false
+                }
+            }, {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 2,
+                    dots: false,
+                    arrows: false
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    dots: false,
+                    arrows: true
+                }
+            }]
+        });
+    } else {
+        $('.recommended__slider').addClass('recommended__slider__no__slider');
+    }
+}
+count__recomendet();
 
 /***/ })
 /******/ ]);
